@@ -48,8 +48,8 @@ difference(){
             // Screw hole at bottom
             translate([0,10,10])  rotate([90,0,0]) cylinder(20,1.6,1.6,false,$fn=30);
             // nut catch
-            translate([0,8.5,10]) rotate([90,0,0]) cylinder(2.8,3.1,3.1,false,$fn=6);
-            translate([0,8.5-(2.8/2),5]) rotate([90,0,0]) cube([6.2,10,2.8],true);
+            translate([0,9,10]) rotate([90,0,0]) cylinder(3,3.1,3.1,false,$fn=6);
+            translate([0,9-(3/2),5]) rotate([90,0,0]) cube([6.2,10,3],true);
             // zip ties
             translate([0,0,60]) rotate_extrude(convexity=10, $fn=100) translate([9,0,0]) square(2.5,center=false);
             translate([0,0,120]) rotate_extrude(convexity=10, $fn=100) translate([9,0,0]) square(2.5,center=false);
