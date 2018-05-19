@@ -1,14 +1,9 @@
-// Left half
 difference(){
-    translate([-61,0,0]) rotate([-90,0,0]) {
-        difference(){
-            // Main Shaft and fins
-            union(){
-                linear_extrude(height = 180, twist = -720, $fn=2000) square([10, 60]);
-                cylinder(180, 10, 10, false, $fn=50);
-                translate([0,0,180]) cylinder(5, 6.8, 6.8, false, $fn=50);
-                translate([0,0,185]) cylinder(14.8, 5.8, 5.8, false, $fn=6);
-            }
+  cube(5,120,120);
+  cylinder(3, 120, 120, false, $fn=50);
+  cylinder(5, 6, 6, false, $fn=50);
+//                translate([0,0,180]) cylinder(5, 6.8, 6.8, false, $fn=50);
+//                translate([0,0,185]) cylinder(14.8, 5.8, 5.8, false, $fn=6);
             // Cutout at bottom
             union(){
                 translate([0,0,0]) cylinder(5, 7, 7, false, $fn=50);
